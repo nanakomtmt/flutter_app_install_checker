@@ -52,28 +52,9 @@ public class AppInstallCheckerPlugin implements FlutterPlugin, MethodCallHandler
 
     private boolean isAppInstalled(@NonNull String packageName) {
         try {
-            // PackageManager packageManager = context.getPackageManager();
-            // List<PackageInfo> apps = packageManager.getInstalledPackages(0);
-          
-
-            // for (PackageInfo packageInfo : apps) {
-               
-            //     System.out.println("app: " + packageInfo.packageName);
-            // }
-            // //ログ
-            // // System.out.println("packageName: " + packageName);
-            // // //全部のアプリを取得
-            // // List<PackageInfo> apps=context.getPackageManager().getInstalledPackages(0);
-
-            // // //context.getPackageManager().getPackageInfo(packageName,0);
-            // // //appsを回して、packageNameを出力
-            // // for (PackageInfo app : apps) {
-            // //     System.out.println("app: " + app.packageName);
-
-
+            
             PackageManager packageManager = context.getPackageManager();
             PackageInfo packageInfo = packageManager.getPackageInfo(packageName, 0);
-            
 
             return true;
         } catch (PackageManager.NameNotFoundException e) {
