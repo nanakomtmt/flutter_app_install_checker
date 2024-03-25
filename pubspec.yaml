@@ -1,6 +1,6 @@
 name: app_install_checker
 description: Check app is installed or not on Android and iOS devices.
-version: 0.0.1
+version: 0.0.3
 homepage: https://github.com/nanakomtmt/flutter_app_install_checker
 
 environment:
