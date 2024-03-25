@@ -16,8 +16,7 @@ class AppInstallChecker {
               false;
       return isInstalled;
     } catch (e) {
-      print(e);
-      throw e;
+      rethrow;
     }
   }
 }
